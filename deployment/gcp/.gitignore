@@ -1,2 +1,3 @@
 tokens/
 secrets/
+*.DS_Store

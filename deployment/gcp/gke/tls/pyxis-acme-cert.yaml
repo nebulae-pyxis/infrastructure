@@ -3,17 +3,17 @@
 apiVersion: certmanager.k8s.io/v1alpha1
 kind: Certificate
 metadata:
-  name: iot-http-nginx-tls-web
+  name: pyxis-http-nginx-tls-web
 spec:
-  secretName: iot-http-nginx-tls-web
+  secretName: pyxis-http-nginx-tls-web
   issuerRef:
     name: letsencrypt-prod
-  commonName: iot.nebulae.com.co
+  commonName: pyxis.nebulae.com.co
   dnsNames:
-  - iot.nebulae.com.co
+  - pyxis.nebulae.com.co
   acme:
     config:
     - http01:
         ingress: ingress-web-main
       domains:
-      - iot.nebulae.com.co
+      - pyxis.nebulae.com.co

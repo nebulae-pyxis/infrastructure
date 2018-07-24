@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #activate gcloud
-gcloud auth activate-service-account $GCP_SERVICE_ACCOUNT_ID --key-file=deployment/gcp/tokens/ne-tpm-prod-gcp-config.json
+gcloud auth activate-service-account $GCP_SERVICE_ACCOUNT_ID --key-file=deployment/gcp/tokens/nebulae-pyxis-gcp-config.json
 
 #Configure default project and Zone
-gcloud config set project ne-tpm-prod
+gcloud config set project nebulae-pyxis
 gcloud config set compute/zone  us-central1-a
 
 # Create Kubernetes engine cluster and link kubectl

@@ -9,7 +9,7 @@ metadata:
     nginx.com/sticky-cookie-services: "serviceName=auth-keycloak srv_id expires=1h path=/auth;"
 spec:  
   rules:
-  - host: iot.nebulae.com.co
+  - host: pyxis.nebulae.com.co
     http:
       paths:  
       - path: /*
@@ -25,4 +25,4 @@ spec:
           serviceName: api-gateway
           servicePort: 80
   tls:
-  - secretName: iot-http-nginx-tls-web
+  - secretName: pyxis-http-nginx-tls-web

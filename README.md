@@ -23,7 +23,7 @@ Requirements
    ```gcloud components install kubectl```
 6. Authorize gcloud cli, you will need the token and the Service Account ID (you can see at GCP > IAM > Service Accounts )
    
-   ``` gcloud auth activate-service-account <SERVICE_ACCOUNT_ID> --key-file=deployment/gcp/tokens/<TOKEN_FILE>```
+   ``` gcloud auth activate-service-account --key-file=deployment/gcp/tokens/<TOKEN_FILE>```
 7. Configure default project.  use the project id generted at # 2
    
    ``` gcloud config set project [PROJECT_ID] ```
