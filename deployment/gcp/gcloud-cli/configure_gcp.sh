@@ -13,6 +13,8 @@ gcloud container clusters get-credentials kec-main
 
 # Deploy secrets
 kubectl create -f deployment/gcp/secrets/secret-keycloak.yml
+kubectl create -f deployment/gcp/secrets/secret-apollo.yml
+kubectl create secret generic google-application-credentials --from-file=deployment/gcp/tokens/gcloud-service-key.json
 
 
 # Deploy ingress 
