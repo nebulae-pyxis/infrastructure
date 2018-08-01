@@ -7,6 +7,7 @@ metadata:
     kubernetes.io/ingress.global-static-ip-name: ip-web-main
     # enable session persistence for one or multiple services
     nginx.com/sticky-cookie-services: "serviceName=auth-keycloak srv_id expires=1h path=/auth;"
+    ingress.kubernetes.io/force-ssl-redirect: "true"
 spec:  
   rules:
   - host: pyxis.nebulae.com.co
