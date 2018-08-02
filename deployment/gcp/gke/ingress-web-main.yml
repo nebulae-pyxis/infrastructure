@@ -14,12 +14,16 @@ spec:
       paths:  
       - path: /*
         backend:
-          serviceName: auth-keycloak
-          servicePort: 80  
+          serviceName: frontend-emi
+          servicePort: 80     
       - path: /emi/*
         backend:
           serviceName: frontend-emi
           servicePort: 80     
+      - path: /auth/*
+        backend:
+          serviceName: auth-keycloak
+          servicePort: 80        
       - path: /api/gateway/*
         backend:
           serviceName: api-gateway
