@@ -24,10 +24,10 @@ spec:
         backend:
           serviceName: auth-keycloak
           servicePort: 80        
-      - path: /api/gateway/*
-        backend:
-          serviceName: api-gateway
-          servicePort: 80
+      # - path: /api/gateway/*
+      #   backend:
+      #     serviceName: api-gateway
+      #     servicePort: 80
       - path: /api/emi-gateway/*
         backend:
           serviceName: api-emi-gateway
