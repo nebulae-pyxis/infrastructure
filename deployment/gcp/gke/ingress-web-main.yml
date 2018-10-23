@@ -28,5 +28,13 @@ spec:
         backend:
           serviceName: api-gateway
           servicePort: 80
+      - path: /api/emi-gateway/*
+        backend:
+          serviceName: api-emi-gateway
+          servicePort: 80
+      - path: /api/sales-gateway/*
+        backend:
+          serviceName: api-sales-gateway
+          servicePort: 80
   tls:
   - secretName: pyxis-http-nginx-tls-web
