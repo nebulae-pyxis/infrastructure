@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  jwt_public_key: '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsQBquKLlhsh1IObDD+KP45iBjelCjiF4mxLEqFkwHpGBZZckjQRPeXCc/z/nhJd47VnmyFiRFNGifpIraneLJYz1XrJ6B1fqGyfLf4mFErIffk4lQpCVUeaW/QyMFdwHN2jhe3S7yWx3gaD3ZKOX7egqZhD5gTEaYldhJX26kmJJHvuuG8t/etjxeNLy0GhLi2E1WhP6M9NGtVKS/02P16CJPr0SFQVXOUdgi5kQUS74rHB/CzEjQNziO2v2BnZVDMbKckSpzWl/zcu388/81hIlLvYpO+NtseioIQYB9sHBoaEs2cKwNEUEGKzcDezfR8fdSoGJ2wYQBnhQTMH0ewIDAQAB\n-----END
+    PUBLIC KEY-----'
+kind: ConfigMap
+metadata:  
+  name: keycloak-jwt-public-key  
